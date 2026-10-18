@@ -1,0 +1,7 @@
+{
+  "name": "rhodes-herbs-stripe-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Standalone Rhodes Herbs storefront with Stripe Checkout on Vercel",
+  "dependencies": { "stripe": "^18.5.0" }
+}

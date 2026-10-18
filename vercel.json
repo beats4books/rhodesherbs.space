@@ -1,0 +1,4 @@
+{
+  "functions": { "api/checkout.js": { "maxDuration": 10 } },
+  "cleanUrls": true
+}

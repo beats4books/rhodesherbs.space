@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shop handcrafted herbal products and garden starts from Rhodes Herbs.">
+  <meta name="theme-color" content="#263d2e">
+  <title>Shop Rhodes Herbs | Seed to Bottle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shop-styles.css">
+</head>
+<body>
+  <div class="announcement">Grown with care. Handcrafted by Jeffery Rhodes El.</div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Rhodes Herbs home"><span class="brand-mark">✳</span><span>RHODES <b>HERBS</b><small>SEED TO BOTTLE</small></span></a>
+    <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="#shop" aria-current="page">Shop</a><a href="learn.html">Learn</a><a href="contact.html">Contact</a></nav>
+    <button id="cart-toggle" class="cart-toggle" aria-label="Open shopping cart">Cart <span id="cart-count">0</span></button>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy"><p class="eyebrow">ROOTED IN THE GARDEN</p><h1>Nature's goodness,<br><em>carefully prepared.</em></h1><p class="hero-text">Explore handcrafted herbal goods and garden-grown starts from Rhodes Herbs.</p><a class="button button-light" href="#shop">Explore the shop <span aria-hidden="true">↗</span></a><p class="hero-note">Seed to Bottle — Handcrafted by Jeffery Rhodes El.</p></div>
+      <div class="hero-art" role="img" aria-label="Botanical illustration of leaves and herbal tincture bottles"><div class="sun"></div><div class="leaf leaf-one"></div><div class="leaf leaf-two"></div><div class="leaf leaf-three"></div><div class="bottle bottle-back"><span></span></div><div class="bottle bottle-front"><span></span><i>RH<br>HERBS</i></div><div class="art-caption">GROWN • GATHERED • HANDCRAFTED</div></div>
+    </section>
+    <section class="trust-row" aria-label="Store highlights"><div><span>✳</span> Small-batch care</div><div><span>✳</span> Plant-focused products</div><div><span>✳</span> Direct from Rhodes Herbs</div></section>
+    <section class="shop-section" id="shop"><div class="section-heading"><div><p class="eyebrow">THE RHODES HERBS COLLECTION</p><h2>Shop the collection</h2></div><p>Choose your products and check out securely through Stripe.</p></div>
+      <div class="category-tabs" role="group" aria-label="Filter products"><button class="filter active" data-filter="all">All products</button><button class="filter" data-filter="tincture">Tinctures</button><button class="filter" data-filter="herb">Herbs & botanicals</button><button class="filter" data-filter="salve">Salves</button><button class="filter" data-filter="garden">Garden starts</button></div>
+      <div id="product-grid" class="product-grid" aria-live="polite"></div>
+      <p class="setup-note" id="catalog-note">Product prices and Stripe payment settings are configured by the store owner before launch.</p>
+    </section>
+    <section class="story" id="story"><div class="story-symbol">✳</div><div><p class="eyebrow">OUR APPROACH</p><h2>From the garden<br>to your home.</h2><p>Rhodes Herbs celebrates plants, careful preparation, and a closer connection to the garden. Browse the collection and read each product's details before purchasing.</p><a href="#shop" class="text-link">Browse products <span>→</span></a></div><div class="story-card"><span class="quote-mark">“</span><p>Seed to Bottle</p><small>Handcrafted by Jeffery Rhodes El</small><div class="line-art">✳ &nbsp; ❧ &nbsp; ✳</div></div></section>
+    <section class="newsletter" id="contact"><div><p class="eyebrow">KEEP IN TOUCH</p><h2>Questions about a product?</h2><p>Contact Rhodes Herbs for product information and availability.</p></div><a class="button button-dark" href="mailto:StraightlaceProductions@gmail.com">Email Rhodes Herbs</a></section>
+  </main>
+  <footer><a class="footer-brand" href="index.html">RHODES HERBS</a><p>Seed to Bottle — Handcrafted by Jeffery Rhodes El.</p><p class="footer-small">Herbal products are not intended to diagnose, treat, cure, or prevent disease. Review product labels and consult a qualified professional with health questions.</p><span>© <span id="year"></span> Rhodes Herbs</span></footer>
+  <div id="cart-panel" class="cart-panel" aria-hidden="true"><div class="cart-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>Your cart</h2></div><button id="cart-close" class="icon-button" aria-label="Close cart">×</button></div><div id="cart-items" class="cart-items"></div><div class="cart-bottom"><div class="cart-total"><span>Subtotal</span><strong id="cart-total">$0.00</strong></div><p class="shipping-note">Shipping and applicable taxes are calculated during checkout if configured.</p><button id="checkout" class="button button-dark full" disabled>Secure checkout <span>→</span></button><p id="checkout-error" class="error" role="alert"></p><small>Secure payment processing by Stripe.</small></div></div><div id="overlay" class="overlay"></div>
+  <script src="shop-products.js"></script><script src="shop-store.js"></script>
+</body></html>
