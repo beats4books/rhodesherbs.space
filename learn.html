@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Herbal Knowledge — Questions Answered | Rhodes Herbs</title>
+<meta name="description" content="Straight answers about dandelion, milk thistle, mullein, burdock, plantain, purslane, yellow dock, oregano, and wormwood — traditional uses, published research, and how Rhodes Herbs grows and prepares them.">
+<style>
+:root{
+  --forest:#1f6b45; --forest2:#123c2a; --moss:#7e3fa3;
+  --gold:#f2b705; --gold2:#ffd968;--golddeep:#9a6800;
+  --cream:#faf6ec; --cream2:#f3ecdb; --ink:#2b2b24; --muted:#6f6a5e;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:600}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:50;background:rgba(250,246,236,.94);backdrop-filter:blur(8px);border-bottom:1px solid #e5dcc4}
+nav .wrap{max-width:1100px;display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-family:Georgia,serif;font-weight:700;font-size:1.15rem;color:var(--forest);text-decoration:none;letter-spacing:.04em}
+.brand img{height:34px;width:34px;object-fit:cover;border-radius:50%}
+.navlinks{display:none;gap:24px}
+.navlinks a{color:var(--ink);text-decoration:none;font-size:.92rem}
+.btn{display:inline-block;background:var(--forest);color:var(--cream);font-weight:700;text-decoration:none;padding:13px 30px;border-radius:999px;font-size:1rem;border:none;cursor:pointer}
+.nav-cta{white-space:nowrap;padding:11px 22px;font-size:.92rem;background:#fff;color:var(--forest);border:1px solid #d9cfb8}
+@media(min-width:860px){.navlinks{display:flex}}
+.pagehero{background:var(--forest);color:#efe8d6;padding:64px 0 54px}
+.pagehero h1{font-size:clamp(2rem,6vw,3.2rem);color:#fff;margin-bottom:12px;line-height:1.15}
+.pagehero p{color:#c9c2ae;max-width:640px;font-size:1.05rem}
+.disclaimer-box{background:#fff8e8;border:2px solid var(--gold);border-radius:14px;padding:24px;margin:36px 0;font-size:.92rem;color:var(--ink)}
+.disclaimer-box strong{color:var(--forest)}
+.toc{background:#fff;border:1px solid #e7ddc2;border-radius:14px;padding:26px;margin:0 0 40px}
+.toc h3{color:var(--forest);margin-bottom:12px;font-size:1.1rem}
+.toc ul{list-style:none;display:grid;gap:8px}
+@media(min-width:640px){.toc ul{grid-template-columns:1fr 1fr}}
+.toc a{color:var(--forest);text-decoration:none;font-size:.94rem;border-bottom:1px solid var(--gold)}
+section.qa-block{padding:44px 0 8px}
+.qa-block>h2{font-size:clamp(1.5rem,4vw,2rem);color:var(--forest);margin-bottom:6px;padding-top:8px}
+.qa{margin:26px 0}
+.qa h3{font-size:1.18rem;color:var(--forest);margin-bottom:8px;line-height:1.4}
+.qa .answer{color:var(--ink)}
+.qa .answer p{margin-bottom:10px}
+.qa .answer p:first-child{font-weight:500}
+.qa .cite{font-size:.84rem;color:var(--muted);border-left:3px solid var(--gold);padding-left:12px;margin-top:8px}
+.back-top{font-size:.85rem;color:var(--gold);text-decoration:none}
+footer{background:var(--forest2);color:#a89e86;padding:44px 0 60px;text-align:center;font-size:.88rem}
+footer .fl{display:flex;gap:22px;justify-content:center;margin:18px 0;flex-wrap:wrap}
+footer a{color:var(--gold2);text-decoration:none}
+.disclaimer{max-width:760px;margin:26px auto 0;font-size:.78rem;color:#7d7461;line-height:1.5}
+.cta-band{background:linear-gradient(135deg,var(--forest2),var(--moss));border-radius:22px;padding:40px 32px;color:#efe8d6;text-align:center;margin:48px 0}
+.cta-band h2{color:#fff;margin-bottom:10px}
+.cta-band p{color:#c9c2ae;max-width:560px;margin:0 auto 20px}
+.btn.gold{background:var(--gold);color:var(--forest2)}
+.menu-btn{display:block;background:none;border:none;font-size:1.7rem;color:var(--forest);cursor:pointer;line-height:1;padding:6px}
+@media(min-width:900px){.menu-btn{display:none}}
+.mobilemenu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--cream);z-index:60;padding:8px 22px 20px;border-bottom:1px solid #e5dcc4;box-shadow:0 18px 30px rgba(0,0,0,.12)}
+.mobilemenu.open{display:block}
+.mobilemenu a{display:block;padding:13px 0;color:var(--forest);font-weight:700;text-decoration:none;border-bottom:1px solid #eee3c8;font-size:1.05rem}
+nav{position:sticky}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is Rhodes Herbs?","acceptedAnswer":{"@type":"Answer","text":"Rhodes Herbs is a small herbal operation in Beaverton, Oregon, run by grower Jeffery Rhodes. He grows medicinal herbs from seed, prepares alcohol- and vegetable-glycerin-based tinctures, dried herbs for tea, herbal salves, and garden starts — selling farmer-direct with no middlemen."}},
+{"@type":"Question","name":"How does Rhodes Herbs grow its herbs?","acceptedAnswer":{"@type":"Answer","text":"Jeffery grows every herb from seed himself and is the only person who handles planting, transplanting, and harvest. Seeds are saved from the previous year's crop, producing third- and fourth-generation plants selected season after season for his soil."}},
+{"@type":"Question","name":"What is mullein traditionally used for?","acceptedAnswer":{"@type":"Answer","text":"Mullein (Verbascum thapsus) has a long traditional history in European herbal systems as a demulcent and expectorant for respiratory comfort, particularly dry or irritative coughs. The European Medicines Agency recognizes certain mullein preparations as traditional herbal medicinal products for relief of sore throat associated with dry cough and cold, based on long-standing use."}},
+{"@type":"Question","name":"What is milk thistle good for?","acceptedAnswer":{"@type":"Answer","text":"Milk thistle's primary active complex, silymarin, has been extensively studied for liver-related endpoints. Multiple meta-analyses of randomized trials have reported reductions in liver enzymes (ALT, AST) in some populations, though evidence is mixed and silymarin is not established as a primary treatment for any liver disease."}},
+{"@type":"Question","name":"Is wormwood safe?","acceptedAnswer":{"@type":"Answer","text":"Wormwood contains thujone, which can be neurotoxic in excess. Products for internal use are typically regulated for low thujone content, and essential oil should not be ingested. Safety data support short-term, appropriately prepared use in adults; it is not recommended in pregnancy."}},
+{"@type":"Question","name":"Does Rhodes Herbs offer a money-back guarantee?","acceptedAnswer":{"@type":"Answer","text":"Yes. Rhodes Herbs states a complete refund policy: if you are not satisfied, return your bottle for a full refund."}}
+]}
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">RHODES HERBS</a><button class="menu-btn" aria-label="Open menu" onclick="toggleMenu()">&#9776;</button>
+    <div class="navlinks"><a href="index.html">Home</a><a href="products.html">Products</a><a href="starts.html">Garden Starts</a><a href="parties.html">Parties</a><a href="learn.html">Learn</a><a href="blog/index.html">Journal</a><a href="contact.html">Contact</a></div>
+    <a class="btn nav-cta" href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<header class="pagehero">
+  <div class="wrap">
+    <h1>Herbal Knowledge, Answered</h1>
+    <p>Traditional uses, published research, and how our herbs are grown and prepared — answered plainly, so you can read the literature yourself and talk it over with your own healthcare provider.</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="disclaimer-box">
+    <strong>Important:</strong> This page is for general educational and informational purposes only. It is not medical advice, a diagnosis, or a treatment recommendation, and nothing here claims that any product cures, treats, prevents, or mitigates any disease. Rhodes Herbs products are dietary supplements and traditional herbal preparations — not intended to diagnose, treat, cure, or prevent any disease. Individual results vary. Always consult a qualified healthcare professional before using any herb or supplement, especially if you are pregnant, nursing, taking medications, have a medical condition, or are considering use for children. Personal experiences shared are anecdotal and do not constitute evidence of efficacy.
+  </div>
+
+  <div class="toc">
+    <h3>Jump to a question</h3>
+    <ul>
+      <li><a href="#about">About Rhodes Herbs &amp; growing practices</a></li>
+      <li><a href="#dandelion">Dandelion</a></li>
+      <li><a href="#milkthistle">Milk thistle</a></li>
+      <li><a href="#mullein">Mullein</a></li>
+      <li><a href="#burdock">Burdock</a></li>
+      <li><a href="#plantain">Plantain</a></li>
+      <li><a href="#purslane">Purslane</a></li>
+      <li><a href="#yellowdock">Yellow dock</a></li>
+      <li><a href="#oregano">Oregano</a></li>
+      <li><a href="#wormwood">Wormwood</a></li>
+      <li><a href="#salves">Salves &amp; topical use</a></li>
+      <li><a href="#faq">Ordering &amp; guarantee FAQ</a></li>
+    </ul>
+  </div>
+
+  <section class="qa-block" id="about">
+    <h2>About Rhodes Herbs &amp; Growing Practices</h2>
+
+    <div class="qa">
+      <h3>What is Rhodes Herbs?</h3>
+      <div class="answer">
+        <p>Rhodes Herbs is a small herbal operation in Beaverton, Oregon, run by grower Jeffery Rhodes — "your personal herbal grower." He grows medicinal herbs from seed and prepares tinctures, dried herbs for tea, herbal salves, and garden starts, selling farmer-direct.</p>
+        <p>The stated approach emphasizes direct communication between grower and customer: you can ask the person who grew your herbs anything about what you're receiving.</p>
+      </div>
+    </div>
+
+    <div class="qa">
+      <h3>How does Rhodes Herbs grow its herbs?</h3>
+      <div class="answer">
+        <p>Jeffery grows every herb from seed himself and is the only person who handles planting, transplanting, and harvest. Seeds are saved from the previous year's crop, producing third- and fourth-generation plants selected season after season for his soil.</p>
+      </div>
+    </div>
+
+    <div class="qa">
+      <h3>How are Rhodes Herbs tinctures made?</h3>
+      <div class="answer">
+        <p>Tinctures are prepared on two bases: vegetable glycerin and alcohol — with only a small amount of alcohol, just enough to extract the plant constituents. Dried leaves and roots are also offered for tea.</p>
+      </div>
+    </div>
+
+    <div class="qa">
+      <h3>What garden starts does Rhodes Herbs sell?</h3>
+      <div class="answer">
+        <p>Garden starts and seeds include Tuscan kale, red / Walla Walla / white onions, cabbage, striped zucchini, squash, bok choy, green beans (including burgundy and golden varieties), spinach, collard greens, chives, cucumber, arugula, beets, cauliflower, cantaloupe, basil, and Brussels sprouts — $5 a pack, with a free grower guide on orders over $40.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="qa-block" id="dandelion">
+    <h2>Dandelion (<em>Taraxacum officinale</em>)</h2>
+
+    <div class="qa">
+      <h3>What is dandelion traditionally used for?</h3>
+      <div class="answer">
+        <p>Traditional use of dandelion dates back centuries in Arabian, Chinese, Ayurvedic, and European systems, where it was used for digestive, liver, and diuretic support.</p>
+      </div>
+    </div>
+
+    <div class="qa">
+      <h3>What does published research say about dandelion?</h3>
+      <div class="answer">
+        <p>A 2021 comprehensive review in the <em>Bulletin of the National Research Centre</em> examined 54 studies and reported research on diuretic, hepatoprotective, antioxidant, anti-inflammatory, and other activities. A 2022 review focused on gastrointestinal potential, noting compounds such as taraxasterol, phenolic acids, and polysaccharides studied in relation to digestive and liver-related models. More recent 2023–2025 reviews continue to summarize phytochemicals (flavonoids, phenolic acids, terpenes) and preclinical findings on antioxidant and related effects.</p>
+        <p>Clinical evidence in humans remains limited for many traditional uses; most data are preclinical or small-scale.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="qa-block" id="milkthistle">
+    <h2>Milk Thistle (<em>Silybum marianum</em>)</h2>
+
+    <div class="qa">
+      <h3>What is milk thistle good for?</h3>
+      <div class="answer">
+        <p>Milk thistle's primary active complex, silymarin, has been extensively studied for liver-related endpoints. A 2020 narrative review summarized clinical observations in alcoholic and non-alcoholic fatty liver contexts, noting antioxidant and anti-inflammatory mechanisms.</p>
+        <p class="cite">Multiple meta-analyses — including 2024–2025 analyses of randomized trials in metabolic dysfunction-associated steatotic liver disease (NAFLD) — have reported reductions in liver enzymes (ALT, AST) and improvements in certain metabolic markers in some populations. Results vary by dose, duration, and study quality, and histological benefits are not consistently demonstrated.</p>
+      </div>
+    </div>
+
+    <div class="qa">
+      <h3>Is milk thistle an established treatment for liver disease?</h3>
+      <div class="answer">
+        <p>No. Authoritative summaries, including those referencing Cochrane and major guidelines, note that evidence is mixed and of variable quality — silymarin is not established as a primary treatment for any liver disease.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="qa-block" id="mullein">
+    <h2>Mullein (<em>Verbascum thapsus</em>)</h2>
+
+    <div class="qa">
+      <h3>What is mullein traditionally used for?</h3>
+      <div class="answer">
+        <p>Mullein has a long traditional history in European and other systems as a demulcent and expectorant for respiratory comfort, particularly dry or irritative coughs. Reviews note mucilage (soothing) and saponins (traditionally linked to expectorant action), along with anti-inflammatory and antimicrobial activity in laboratory models.</p>
+      </div>
+    </div>
+
+    <div class="qa">
+      <h3>What do regulators say about mullein?</h3>
+      <div class="answer">
+        <p>The European Medicines Agency recognizes certain mullein preparations as traditional herbal medicinal products for relief of sore throat associated with dry cough and cold — based on long-standing use rather than modern clinical trials.</p>
+        <p>High-quality human clinical trials specifically testing mullein leaf or tea for cough or lung function are lacking, and claims of "detoxing" or "cleansing" the lungs are not supported by clinical evidence.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="qa-block" id="burdock">
+    <h2>Burdock (<em>Arctium lappa</em>)</h2>
+
+    <div class="qa">
+      <h3>What is burdock root traditionally used for?</h3>
+      <div class="answer">
+        <p>Burdock root has traditional use in European and Asian systems as a depurative (a traditional "cleansing" herb) and for skin and digestive support.</p>
+      </div>
+    </div>
+
+    <div class="qa">
+      <h3>What does modern research say about burdock?</h3>
+      <div class="answer">
+        <p>Modern reviews describe antioxidant, anti-inflammatory, and other activities in preclinical models. Small clinical studies have examined effects on inflammatory markers (for example in knee osteoarthritis) and certain metabolic parameters, and a 2024 review summarized pharmacological properties including hepatoprotective and metabolic findings in experimental settings. Clinical evidence remains limited.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="qa-block" id="plantain">
+    <h2>Plantain (<em>Plantago major</em>)</h2>
+
+    <div class="qa">
+      <h3>What is plantain leaf used for? (Is this the banana-like fruit?)</h3>
+      <div class="answer">
+        <p>No — this is <em>Plantago major</em>, the common broadleaf (and narrow-leaf) plantain herb, not the starchy banana-like fruit. Its leaves have been used traditionally worldwide for wound support and respiratory and digestive comfort.</p>
+        <p class="cite">A classic 2000 review documented wound-healing, anti-inflammatory, and related activities linked to polysaccharides, flavonoids, and iridoid glycosides. More recent reviews (including 2025) continue to explore anti-inflammatory and potential respiratory effects in experimental models; limited clinical data exist, for example in combination products for cough.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="qa-block" id="purslane">
+    <h2>Purslane (<em>Portulaca oleracea</em>)</h2>
+
+    <div class="qa">
+      <h3>Why is purslane considered nutritious?</h3>
+      <div class="answer">
+        <p>Purslane is recognized as one of the richer terrestrial plant sources of omega-3 fatty acids (particularly alpha-linolenic acid), along with antioxidants such as vitamin E, vitamin C, and glutathione.</p>
+        <p class="cite">A foundational 1992 study in the <em>Journal of the American College of Nutrition</em> quantified these nutrients and compared them favorably to spinach. Comprehensive 2024 reviews confirm the nutritional profile and summarize preclinical findings on antioxidant, anti-inflammatory, and related properties.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="qa-block" id="yellowdock">
+    <h2>Yellow Dock (<em>Rumex crispus</em>)</h2>
+
+    <div class="qa">
+      <h3>What is yellow dock root traditionally used for?</h3>
+      <div class="answer">
+        <p>Yellow dock root has traditional use as a mild laxative, astringent, and "blood cleanser" / alterative in European and other herbal systems. A 2024 comprehensive review catalogued its phytochemicals (anthraquinones, flavonoids, and others) and summarized traditional uses alongside preclinical pharmacological data.</p>
+      </div>
+    </div>
+
+    <div class="qa">
+      <h3>Are there cautions with yellow dock?</h3>
+      <div class="answer">
+        <p>Yes. Caution is advised due to oxalate and anthraquinone content — long-term or high-dose use is not recommended without professional guidance. Clinical trial evidence for specific therapeutic claims is sparse.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="qa-block" id="oregano">
+    <h2>Oregano (<em>Origanum vulgare</em>)</h2>
+
+    <div class="qa">
+      <h3>What are the active compounds in oregano?</h3>
+      <div class="answer">
+        <p>Oregano is rich in phenolic compounds and essential-oil constituents — notably carvacrol and thymol — with well-documented antimicrobial and antioxidant activity in laboratory studies.</p>
+        <p class="cite">Reviews confirm broad-spectrum activity against various bacteria and fungi in vitro and describe mechanisms such as membrane disruption. Limited clinical data explore topical or other applications.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="qa-block" id="wormwood">
+    <h2>Wormwood (<em>Artemisia absinthium</em>)</h2>
+
+    <div class="qa">
+      <h3>What is wormwood traditionally used for?</h3>
+      <div class="answer">
+        <p>Wormwood has a long history as a traditional bitter and anthelmintic. The European Medicines Agency recognizes certain preparations for temporary loss of appetite and mild digestive complaints, based on traditional use.</p>
+      </div>
+    </div>
+
+    <div class="qa">
+      <h3>Is wormwood safe?</h3>
+      <div class="answer">
+        <p>Wormwood contains thujone, which can be neurotoxic in excess. Products intended for internal use are typically regulated for low thujone content, and essential oil should not be ingested. Safety data support short-term, appropriately prepared use in adults — it is not recommended in pregnancy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="qa-block" id="salves">
+    <h2>Salves &amp; Topical Use</h2>
+
+    <div class="qa">
+      <h3>What is in Rhodes Herbs salves?</h3>
+      <div class="answer">
+        <p>Salves combine beeswax, coconut oil, shea butter, olive oil, and selected herbs also used in the tinctures. Traditional and modern interest in these base ingredients centers on skin moisturization and barrier support.</p>
+        <p>Any herbal constituents transferred into the salve are present at concentrations determined by the preparation method. No claims are made regarding systemic effects from topical application.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="qa-block" id="experiences">
+    <h2>Individual Experiences</h2>
+
+    <div class="qa">
+      <h3>What has the grower reported from personal use?</h3>
+      <div class="answer">
+        <p>The grower has described personal use of the herbs over approximately ten consecutive years and has shared observations regarding respiratory comfort with mullein, changes in vision, joint comfort, skin condition, frequency of common colds, and blood-pressure medication status.</p>
+        <p><strong>These are individual experiences only.</strong> They do not constitute clinical evidence and should not be interpreted as expected outcomes for others.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="qa-block" id="faq">
+    <h2>Ordering &amp; Guarantee FAQ</h2>
+
+    <div class="qa">
+      <h3>How do I order from Rhodes Herbs?</h3>
+      <div class="answer">
+        <p>Email <a href="mailto:rhodesjeffery@gmail.com" style="color:var(--forest);font-weight:700">rhodesjeffery@gmail.com</a> or call/text <a href="tel:+15039759722" style="color:var(--forest);font-weight:700">503-975-9722</a>. For product-specific questions about growing practices, preparation methods, or ordering, contact Rhodes Herbs directly — you'll be talking to the grower himself.</p>
+      </div>
+    </div>
+
+    <div class="qa">
+      <h3>Does Rhodes Herbs offer a money-back guarantee?</h3>
+      <div class="answer">
+        <p>Yes. The seller states a refund policy: if you are not satisfied, return your bottle for a complete refund.</p>
+      </div>
+    </div>
+
+    <div class="qa">
+      <h3>Does Rhodes Herbs ship?</h3>
+      <div class="answer">
+        <p>Yes — nationwide shipping with eco-friendly packaging and tracking included. Garden starts also offer free local pickup in Beaverton, with delivery available for $20.</p>
+      </div>
+    </div>
+
+    <div class="qa">
+      <h3>Where can I read the published research myself?</h3>
+      <div class="answer">
+        <p>This page cites the general shape of the literature — comprehensive reviews, meta-analyses, and regulatory monographs (such as the European Medicines Agency's herbal monographs). Search the herb's Latin name plus "review" or "meta-analysis" in PubMed or Google Scholar to read the primary sources, and discuss anything you're considering with your own healthcare provider.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <h2>Questions about an herb?</h2>
+    <p>Ask the person who grew it. Farmer-direct means real answers from the grower himself.</p>
+    <a class="btn gold" href="contact.html">Contact Rhodes Herbs</a>
+  </div>
+
+  <p style="text-align:center;margin-bottom:60px"><a class="back-top" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Back to top</a></p>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div style="font-family:Georgia,serif;font-size:1.3rem;color:var(--gold2);margin-bottom:4px">RHODES HERBS</div>
+    <div style="letter-spacing:.2em;font-size:.75rem;color:#a89e86">YOUR PERSONAL HERBAL GROWER · ROOTED IN WELLNESS</div>
+    <div class="fl"><a href="index.html">Home</a><a href="products.html">Products</a><a href="starts.html">Garden Starts</a><a href="parties.html">Parties</a><a href="learn.html">Learn</a><a href="blog/index.html">Journal</a><a href="contact.html">Contact</a><a href="disclaimer.html">Disclaimer</a></div>
+    <p class="disclaimer">These statements have not been evaluated by the FDA. This page is for educational and informational purposes only — not medical advice, diagnosis, or treatment. Scientific literature cited reflects the state of research at the time of publication and does not guarantee the same effects from any specific commercial product. Always consult a qualified healthcare professional before using any herb or supplement.</p>
+    <p style="margin-top:16px">© 2026 Rhodes Herbs · Beaverton, Oregon</p>
+  </div>
+</footer>
+
+<script>
+function toggleMenu(){
+  var m = document.getElementById('mmenu');
+  if(!m){
+    m = document.createElement('div');
+    m.id = 'mmenu'; m.className = 'mobilemenu';
+    var src = document.querySelector('.navlinks');
+    if(!src) return;
+    m.innerHTML = src.innerHTML;
+    m.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ m.classList.remove('open'); }); });
+    document.querySelector('nav').appendChild(m);
+  }
+  m.classList.toggle('open');
+}
+</script>
+</body>
+</html>
