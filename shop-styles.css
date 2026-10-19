@@ -19,3 +19,39 @@
 .bottle-label i{position:absolute;bottom:0;left:0;right:0;background:#15512e;color:white;font:6px Arial,sans-serif;font-style:normal;padding:4px 1px;white-space:nowrap}
 .product-type{position:absolute;bottom:8px;left:0;right:0;z-index:2;font-size:8px!important;letter-spacing:.17em!important;color:#45623d!important;text-align:center}
 @media(max-width:560px){.product-art{height:180px!important}.tincture-bottle{transform:scale(.78);transform-origin:center}.product-type{font-size:7px!important}}
+
+
+/* Readability refresh: larger bottle labels, calmer artwork, and roomier product cards */
+.product-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.product-art{height:270px!important;background:radial-gradient(ellipse at 50% 25%,#faf7eb 0%,#e8eadc 52%,#d5dfd0 100%)}
+.tincture-bottle{width:124px;height:232px;filter:drop-shadow(0 9px 6px #30231530)}
+.dropper{width:30px;height:46px}
+.dropper:after{width:54px;left:-13px}
+.bottle-neck{top:47px;width:43px;height:24px}
+.bottle-glass{top:65px;width:116px;height:160px;border-radius:18px 18px 22px 22px}
+.bottle-label{left:6px;right:6px;top:13px;height:130px;padding:7px 4px 20px;border-radius:5px;background:#fffbea;border:2px solid #315d38;gap:2px}
+.bottle-label strong{font-size:14px;letter-spacing:.3px;line-height:1.1}
+.bottle-label>small:first-of-type{font-size:8px;letter-spacing:2.2px}
+.bottle-label .botanical-mark{font-size:22px;line-height:1.05;margin:2px 0}
+.bottle-label>b{font-size:11px;line-height:1.12;overflow-wrap:anywhere}
+.bottle-label>small:nth-of-type(2){font-size:7px;line-height:1.1;letter-spacing:0;margin-top:3px}
+.bottle-label em{font-size:7px;margin-top:4px}
+.bottle-label i{font-size:7px;line-height:1.15;padding:5px 2px;white-space:normal}
+.product-info{padding:21px;gap:2px}
+.product-category{font-size:10px;letter-spacing:.12em}
+.product-info h3{font-size:22px;line-height:1.2;margin:10px 0}
+.product-info p{font-size:13px;line-height:1.75;margin-bottom:20px}
+.product-price{font-size:15px}
+.add-button{font-size:11px;padding:11px 13px}
+.product-type{font-size:9px!important;letter-spacing:.15em!important}
+@media(max-width:850px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
+@media(max-width:560px){
+ .product-grid{gap:12px}
+ .product-art{height:220px!important}
+ .tincture-bottle{transform:scale(.88)}
+ .product-info{padding:14px}
+ .product-info h3{font-size:18px}
+ .product-info p{font-size:12px;line-height:1.6}
+ .product-price{font-size:14px}
+ .product-buy-row{gap:10px}
+}
