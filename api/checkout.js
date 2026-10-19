@@ -11,12 +11,20 @@ module.exports = async function handler(req, res) {
   try {
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
     const allowed = {
-      'dandelion-tincture': process.env.STRIPE_PRICE_DANDELION_TINCTURE,
-      'burdock-tincture': process.env.STRIPE_PRICE_BURDOCK_TINCTURE,
-      'plantain-tincture': process.env.STRIPE_PRICE_PLANTAIN_TINCTURE,
-      'dried-botanicals': process.env.STRIPE_PRICE_DRIED_BOTANICALS,
-      'herbal-salve': process.env.STRIPE_PRICE_HERBAL_SALVE,
-      'garden-starts': process.env.STRIPE_PRICE_GARDEN_STARTS
+      'burdock-root': process.env.STRIPE_PRICE_BURDOCK_TINCTURE,
+      'dandelion-root': process.env.STRIPE_PRICE_DANDELION_TINCTURE,
+      'holy-basil': process.env.STRIPE_PRICE_HOLY_BASIL,
+      'mullein': process.env.STRIPE_PRICE_MULLEIN,
+      'milk-thistle-mullein': process.env.STRIPE_PRICE_MILK_THISTLE_MULLEIN,
+      'plantain-leaf': process.env.STRIPE_PRICE_PLANTAIN_TINCTURE,
+      'red-clover': process.env.STRIPE_PRICE_RED_CLOVER,
+      'nettle-leaf': process.env.STRIPE_PRICE_NETTLE_LEAF,
+      'calendula': process.env.STRIPE_PRICE_CALENDULA,
+      'elderberry': process.env.STRIPE_PRICE_ELDERBERRY,
+      'chamomile': process.env.STRIPE_PRICE_CHAMOMILE,
+      'ginger': process.env.STRIPE_PRICE_GINGER,
+      'turmeric': process.env.STRIPE_PRICE_TURMERIC,
+      'lemon-balm': process.env.STRIPE_PRICE_LEMON_BALM
     };
     const body = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
     if (!body || !Array.isArray(body.items) || body.items.length < 1 || body.items.length > 20) {
